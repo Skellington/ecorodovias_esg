@@ -1373,22 +1373,22 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.nav a.btn-indicadores,
-.nav a.btn-publicacoes {
+.nav__btns a.btn-indicadores,
+.nav__btns a.btn-publicacoes {
     margin-right: 10px;
     border-radius: 20px;
     padding-right: 15px;
 }
-.nav a.btn-indicadores:hover,
-.nav a.btn-publicacoes:hover {
+.nav__btns a.btn-indicadores:hover,
+.nav__btns a.btn-publicacoes:hover {
     background-color: #f7fbf6;
     -webkit-transition: 0.3s ease-out;
 }
 .nav__btns {
     margin-right: 60px;
 }
-.nav .icon1,
-.nav .icon2 {
+.nav__btns .icon1,
+.nav__btns .icon2 {
     display: block;
     width: 35px;
     height: 35px;
@@ -1400,30 +1400,30 @@ header {
     margin-right: 5px;
     -webkit-transition: 0.3s ease-out;
 }
-.nav .icon2 {
+.nav__btns .icon2 {
     background-image: url(assets/images/icon-book-green.svg);
 }
-.nav a:hover .icon1,
-.nav a:hover .icon2 {
+.nav__btns a:hover .icon1,
+.nav__btns a:hover .icon2 {
     border: 4px solid #edf7ec;
     border-radius: 100%;
     background-color: #e4f4e3;
     -webkit-transition: 0.3s ease-out;
 }
-.nav span {
+.nav__btns span {
     color: #9a9b9f;
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
     -webkit-transition: 0.3s ease-out;
 }
-.nav a.btn-indicadores:hover span,
-.nav a.btn-publicacoes:hover span,
-.nav a.btn-indicadores:hover span strong {
+.nav__btns a.btn-indicadores:hover span,
+.nav__btns a.btn-publicacoes:hover span,
+.nav__btns a.btn-indicadores:hover span strong {
     color: #4db748;
     -webkit-transition: 0.3s ease-out;
 }
-.nav span strong {
+.nav__btns span strong {
     display: block;
     color: #9a9b9f;
     font-size: 11px;
@@ -1438,7 +1438,11 @@ header {
     width: 100%;
     height: 100vh;
     padding-top: 75px;
+    overflow: hidden;
     -webkit-transition: 0.3s ease-out;
+}
+.menu-principal .nav__btns {
+    display: none;
 }
 .menu-principal.expanded {
     visibility: visible;
@@ -1517,7 +1521,8 @@ header {
     width: 100%;
     height: 14.3%;
 }
-.bg1 {
+.bg1,
+.bg8 {
     background-color: #006B4E;
 }
 .bg2 {
@@ -1537,6 +1542,9 @@ header {
 }
 .bg7 {
     background-color: #C6D826;
+}
+.bg8 {
+    display: none;
 }
 
 .banner {
@@ -1631,6 +1639,10 @@ main {
 }
 .areas__box img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-width: 100%;
+    max-width: 100%;
     min-height: 733px;
 }
 .img__border__color1 {
@@ -2015,7 +2027,8 @@ main {
     margin-bottom: 20px;
 }
 .faq .btn-link {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     min-height: 80px;
     position: relative;
@@ -2033,7 +2046,7 @@ main {
     color: #fff;
     font-size: 24px;
     line-height: 28px;
-    font-size: 300;
+    font-weight: 300;
 }
 .faq .btn-link strong {
     color: #fff;
@@ -2526,15 +2539,458 @@ main {
 @media (max-width: 1680px) {
 }
 
-@media (max-width: 1440px) {
-}
-
 @media (max-width: 1366px) {
 }
 
 @media (max-width: 1280px) {
+    .li__3, .li__7 {
+        padding-left: 200px;
+    }
+    .li__2, .li__6 {
+        padding-left: 70px;
+    }
+    .li__4 {
+        padding-left: 330px;
+    }
 }
 
 @media (max-width: 1199px) {
+    .banner_content h1 {
+        font-size: 75px;
+        line-height: 65px;
+    }
+    .banner_content p {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .areas__box__content h3 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .areas__box img {
+        min-height: 553px;
+    }
+    .nav__title h2 {
+        font-size: 27px;
+        line-height: 23px;
+    }
+    .nav__title h2 strong {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    .nav__number {
+        font-size: 76px;
+        line-height: 70px;
+        margin: 0 20px;
+    }
+    .li__2, .li__6 {
+        padding-left: 40px;
+    }
+    .li__3, .li__7 {
+        padding-left: 140px;
+    }
+    .li__4 {
+        padding-left: 250px;
+    }
+    .compromissos__content__info h2, 
+    .governanca__content__info h2 {
+        font-size: 56px;
+        line-height: 51px;
+    }
+    .compromissos__content__info p, .governanca__content__info p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .compromissos__content__info img, 
+    .governanca__content__info img {
+        width: 80px;
+        margin-bottom: 35px;
+    }
+    .governanca-about__content h2 {
+        font-size: 39px;
+        line-height: 44px;
+    }
+    .governanca-about__content h3 {
+        font-size: 69px;
+        line-height: 73px;
+    }
+    .governanca-about__content p {
+        font-size: 22px;
+        line-height: 39px;
+    }
+    .central__content__info h2 {
+        font-size: 53px;
+        line-height: 53px;
+    }
+    .central__content__info h2 strong {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .central__content__info img {
+        margin-bottom: 40px;
+        width: 60px;
+    }
+    .central__content {
+        height: 400px;
+    }
+    .central-about__content h2 {
+        font-size: 41px;
+        line-height: 53px;
+    }
+    .central-about__content h2 strong {
+        font-size: 41px;
+        line-height: 46px;
+    }
+    .central-about__content h3 {
+        font-size: 22px;
+        line-height: 37px;
+    }
+    .central-about__items__item_text h3 {
+        font-size: 24px;
+    }
+    .central-about__items__item_text p {
+        font-size: 21px;
+    }
+}
 
+@media (max-width: 768px) {
+    .menu-principal__list ul li a {
+        -webkit-transition: none !important;
+    }
+    .nav__btns {
+        margin-right: 10px;
+    }
+    .areas__box img {
+        min-height: 423px;
+    }
+    .areas__box__btn span {
+        font-size: 24px;
+    }
+    .areas__box__content h3 {
+        font-size: 29px;
+    }
+    .li__2, .li__6, .li__4, .li__3, .li__7 {
+        padding-left: 0;
+    }
+    .message {
+        padding:70px 0;
+    }
+    .central-about__items {
+        justify-content: center;
+    }
+    .central-about__items__item_text {
+        height: auto;
+    }
+    .central-about__items__item {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .compromissos, .governanca {
+        height: auto;
+    }
+    .compromissos__content__info img, 
+    .governanca__content__info img {
+        width: 45px;
+        margin-bottom: 20px;
+    }
+    .compromissos__content__info h2, 
+    .governanca__content__info h2 {
+        font-size: 44px;
+        line-height: 51px;
+        border-bottom: 1px solid #C9E9C8;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .bg__img {
+        display: block;
+    }
+    .bg__img__left,
+    .bg__img img {
+        width: 100%;
+    }
+    .bg__img__image {
+        width: 100%;
+        position: relative;
+    }
+    .message__img__content {
+        display: block;
+    }
+    .message__img__content img {
+        width: 110px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+    .message__content h2 {
+        font-size: 41px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+    .message__content p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .faq {
+        padding: 30px 0;
+    }
+    .title {
+        margin-bottom: 35px;
+    }
+    .title h2 {
+        font-size: 31px;
+        line-height: 38px;
+    }
+    .title h2 strong {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .compromissos__content, .governanca__content {
+        height: auto;
+        padding-top: 105px;
+    }
+    .compromissos__content__info p, .governanca__content__info p {
+        width: 100%;
+    }
+    .compromissos__content__info .btn, .governanca__content__info .btn {
+        margin-bottom: 30px;
+    }
+    .bg__img__left {
+        z-index: -1;
+        height: 100%;
+    }
+    .faq .btn-link {
+        min-height: 60px;
+        background-size: 48px;
+        padding: 21px 60px 21px 30px;
+    }
+    .faq .btn-link h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .faq .btn-link strong {
+        font-size: 14px;
+    }
+    .card-body p, .card-body ul li {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .card-body {
+        padding: 15px;
+    }
+    .message {
+        background-size: cover;
+    }
+    .governanca-about {
+        padding: 30px 0;
+    }
+    .governanca-about__content h2 {
+        font-size: 29px;
+        line-height: 35px;
+        margin-bottom: 45px;
+    }
+    .governanca-about__content h2 strong {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .governanca-about__content h3 {
+        font-size: 42px;
+        line-height: 47px;
+        width: 100%;
+    }
+    .governanca-about__content p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .governanca__content__info {
+        width: 100%;
+    }
+    .central__content__info img {
+        margin-bottom: 30px;
+        width: 50px;
+    }
+    .central__content__info h2 {
+        font-size: 49px;
+        line-height: 50px;
+    }
+    .central__content__info h2 strong {
+        font-size: 48px;
+        line-height: 53px;
+    }
+    .central-about {
+        padding: 30px 0;
+    }
+    .central-about__content h2 {
+        font-size: 35px;
+        line-height: 43px;
+        margin-bottom: 20px;
+    }
+    .central-about__content h2 strong {
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .central-about__content h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .central-about__content {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav__btns,
+    .arrow-down {
+        display: none;
+    }
+    .slogan h1,
+    .slogan h1 span {
+        text-align: right;
+        font-size: 11px;
+    }
+    .banner_content h1 {
+        font-size: 35px;
+        line-height: 45px;
+        border-bottom: 1px solid #C9E9C8;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+    }
+    .banner_content {
+        height: auto;
+        padding: 60px 0 80px;
+    }
+    .banner_content p {
+        width: 100%;
+    }
+    .banner {
+        height: auto;
+        background-image: url(assets/images/bg-home-mobile.jpg);
+        background-position: top center;
+        margin-top: 75px;
+    }
+    .areas {
+        padding: 40px 0 0;
+    }
+    .title h2 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .title {
+        margin-bottom: 35px;
+    }
+    .areas__list {
+        display: block;
+    }
+    .areas__box {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .areas__box img {
+        min-height: auto;
+    }
+    .areas__box__btn span {
+        font-size: 13px;
+    }
+    .areas__box__btn {
+        height: 43px;
+        padding: 0 24px;
+    }
+    .areas__box__content {
+        bottom: 95px;
+        padding: 0 20px;
+    }
+    .menu-principal__list {
+        display: block;
+    }
+    .menu-principal__list ul {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .menu-principal .nav__btns {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 55px;
+        margin-bottom: 53px;
+        position: relative;
+        z-index: 2;
+    }
+    .nav__btns a {
+        display: flex;
+        align-items: center;
+    }
+    .nav__btns span,
+    .nav__btns span strong {
+        color: #fff;
+    }
+    .nav__title h2 {
+        font-size: 23px;
+        line-height: 23px;
+    }
+    .nav__title h2 strong {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .nav__icon img {
+        width: 31px;
+    }
+    .menu__bg span {
+        height: 143px;
+    }
+    .menu__bg {
+        height: 100%;
+        display: block;
+    }
+    .menu-principal {
+        position: absolute;
+        height: auto;
+    }
+    .menu-principal__list {
+        height: auto;
+    }
+    .menu-principal__list ul li {
+        height: 143px;
+    }
+    .bg8 {
+        display: block;
+    }
+    .faq .btn-link {
+        background-position: 98% 50%;
+    }
+    .governanca-about__content h3 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    .central-about__items__item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .logo__nav .logo img {
+        width: 120px;
+    }
+    .slogan {
+        margin-right: 10px;
+    }
+    .banner_content h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .nav__title h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .nav__title h2 strong {
+        font-size: 19px;
+        line-height: 20px;
+    }
+    .compromissos__content__info h2, .governanca__content__info h2 {
+        font-size: 35px;
+        line-height: 37px;
+    }
+    .central__content__info h2 strong {
+        font-size: 45px;
+    }
 }
