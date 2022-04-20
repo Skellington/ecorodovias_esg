@@ -1851,6 +1851,27 @@ main {
     margin-bottom: 15px;
     list-style: disc;
 }
+.governanca-about__content table {
+    margin-bottom: 40px;
+}
+.governanca-about__content table td,
+.governanca-about__content table tr {
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 5px;
+    border: thin solid #6C6C6C;
+}
+.governanca-about__content table th {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 5px;
+    border: thin solid #6C6C6C;
+    background-color: #6C6C6C;
+}
 
 .img-flex {
     display: flex;
@@ -2671,9 +2692,10 @@ main {
         font-size: 50px;
         line-height: 63px;
     }
-    .governanca-about__content p {
+    .governanca-about__content p,
+    .governanca-about__content ul li {
         font-size: 22px;
-        line-height: 39px;
+        line-height: 32px;
     }
     .central__content__info h2 {
         font-size: 53px;
@@ -2707,6 +2729,27 @@ main {
     }
     .central-about__items__item_text p {
         font-size: 21px;
+    }
+    .scroll-mobile {
+        overflow: hidden;
+        width: 100%;
+    }
+    .governanca-about__content table td, 
+    .governanca-about__content table tr,
+    .governanca-about__content table th {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .governanca-about__content table tbody {
+        display: table;
+        width: 100%;
+    }
+    .governanca-about__content table{ 
+        display: block;
+        overflow-x: auto;
+    }
+    .governanca-about__content table tr {
+        max-width: 200px;
     }
 }
 
@@ -2999,8 +3042,10 @@ main {
         display: block;
     }
     .menu-principal {
-        position: absolute;
-        height: auto;
+        position: fixed;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     .menu-principal__list {
         height: auto;
