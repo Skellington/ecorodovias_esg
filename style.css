@@ -1578,6 +1578,10 @@ header {
     font-size: 27px;
     line-height: 33px;
     font-weight: 400;
+    margin-bottom: 30px;
+}
+.banner_content .btn {
+    width: 150px;
 }
 
 main {
@@ -1754,7 +1758,7 @@ main {
 }
 .compromissos__content__info h2,
 .governanca__content__info h2 {
-    font-size: 86px;
+    font-size: 80px;
     line-height: 66px;
     font-weight: 300;
     border-bottom: 6px solid #C9E9C8;
@@ -1799,7 +1803,7 @@ main {
     font-size: 53px;
     line-height: 64px;
     font-weight: 300;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 .governanca-about__content h2 strong {
     display: block;
@@ -1811,19 +1815,36 @@ main {
 .governanca-about__content h3 {
     width: 80%;
     color: #4DB748;
-    font-size: 99px;
+    font-size: 60px;
     line-height: 108px;
     font-weight: 800;
     border-bottom: 6px solid #a6dba3;
     padding-bottom: 20px;
     margin-bottom: 40px;
 }
-.governanca-about__content p {
+.governanca-about__content p,
+.governanca-about__content ul li {
     color: #6C6C6C;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 44px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+.governanca-about__content p strong,
+.governanca-about__content p i,
+.governanca-about__content p a {
+    color: #6C6C6C;
+}
+.governanca-about__content p a {
+    text-decoration: underline;
+}
+.governanca-about__content ul {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.governanca-about__content ul li {
+    margin-bottom: 15px;
+    list-style: disc;
 }
 
 .central {
@@ -1982,6 +2003,8 @@ main {
     position: relative;
     padding: 140px;
     background-image: url(assets/images/bg-message.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .message.page2 {
     background-image: url(assets/images/bg-message2.jpg);
@@ -2008,8 +2031,8 @@ main {
     margin-bottom: 20px;
 }
 .message__content p {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 27px;
     font-weight: 400;
 }
 
@@ -2073,10 +2096,25 @@ main {
     margin: 0 auto;
 }
 .card-body p,
-.card-body ul li {
+.card-body ul li,
+.card-body p strong,
+.card-body a {
     color: #64666B;
     font-size: 18px;
     line-height: 26px;
+}
+.card-body a {
+    text-decoration: underline;
+}
+.card-body ul {
+    padding-left: 30px;
+}
+.card-body ul li {
+    list-style: disc;
+}
+.card-body p,
+.card-body ul li {
+    margin-bottom: 15px;
 }
 .card-body h2,
 .card-body h3 {
@@ -2537,6 +2575,9 @@ main {
 }
 
 @media (max-width: 1680px) {
+    .compromissos__content__info p, .governanca__content__info p {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -2611,8 +2652,8 @@ main {
         line-height: 44px;
     }
     .governanca-about__content h3 {
-        font-size: 69px;
-        line-height: 73px;
+        font-size: 50px;
+        line-height: 63px;
     }
     .governanca-about__content p {
         font-size: 22px;
