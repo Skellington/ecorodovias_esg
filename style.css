@@ -1832,11 +1832,16 @@ main {
 }
 .governanca-about__content p strong,
 .governanca-about__content p i,
-.governanca-about__content p a {
+.governanca-about__content p a,
+.governanca-about__content ul li i,
+.governanca-about__content ul li strong {
     color: #6C6C6C;
 }
 .governanca-about__content p a {
     text-decoration: underline;
+}
+.governanca-about__content p strong a  {
+    font-weight: 700;
 }
 .governanca-about__content ul {
     margin-left: 40px;
