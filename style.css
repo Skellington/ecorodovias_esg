@@ -1859,7 +1859,7 @@ main {
     margin-bottom: 40px;
 }
 .img-flex img {
-    min-width: 150px;
+    width: 150px;
     margin: 0 30px 30px 0;
 }
 
