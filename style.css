@@ -1863,6 +1863,9 @@ main {
     padding: 5px;
     border: thin solid #6C6C6C;
 }
+.governanca-about__content table td:last-child {
+    white-space: nowrap;
+}
 .governanca-about__content table th {
     color: #fff;
     font-size: 16px;
@@ -2737,8 +2740,11 @@ main {
     .governanca-about__content table td, 
     .governanca-about__content table tr,
     .governanca-about__content table th {
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .governanca-about__content table th {
+        white-space: nowrap;
     }
     .governanca-about__content table tbody {
         display: table;
