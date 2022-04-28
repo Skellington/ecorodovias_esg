@@ -1579,6 +1579,7 @@ header {
     line-height: 33px;
     font-weight: 400;
     margin-bottom: 30px;
+    text-align: justify;
 }
 .banner_content .btn {
     width: 150px;
@@ -1781,6 +1782,7 @@ main {
     line-height: 33px;
     font-weight: 400;
     margin-bottom: 40px;
+    text-align: justify;
 }
 .governanca__content {
     display: flex;
@@ -1829,6 +1831,7 @@ main {
     line-height: 44px;
     font-weight: 300;
     margin-bottom: 20px;
+    text-align: justify;
 }
 .governanca-about__content p strong,
 .governanca-about__content p i,
@@ -1954,6 +1957,7 @@ main {
     line-height: 50px;
     font-weight: 300;
     margin-bottom: 40px;
+    text-align: justify;
 }
 .central-about__items {
     display: flex;
@@ -2018,12 +2022,14 @@ main {
     font-size: 28px;
     line-height: 34px;
     font-weight: bold;
+    text-align: justify;
 }
 .central-about__items__item_text p {
     color: #1A8165;
     font-size: 25px;
     line-height: 28px;
     font-weight: 300;
+    text-align: justify;
 }
 .central-about__items__item_bottom {
     padding: 0 36px;
@@ -2074,6 +2080,7 @@ main {
     font-size: 20px;
     line-height: 27px;
     font-weight: 400;
+    text-align: justify;
 }
 
 .faq {
@@ -2142,6 +2149,7 @@ main {
     color: #64666B;
     font-size: 18px;
     line-height: 26px;
+    text-align: justify;
 }
 .card-body a {
     text-decoration: underline;
