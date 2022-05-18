@@ -2104,7 +2104,7 @@ main {
     position: relative;
     margin-bottom: 20px;
 }
-.faq .btn-link {
+.btn-link {
     display: flex;
     align-items: center;
     width: 100%;
@@ -2120,24 +2120,25 @@ main {
     background-size: 65px;
     background-color: #1a8165;
 }
-.faq .btn-link h5 {
+.btn-link h5 {
     color: #fff;
     font-size: 24px;
     line-height: 28px;
     font-weight: 300;
 }
-.faq .btn-link strong {
+.btn-link strong {
     color: #fff;
     font-size: 20px;
     font-size: bold;
 }
-.faq .btn-link.collapsed h5 {
+.btn-link.collapsed h5,
+.btn-link.collapsed h5 i {
     color: #1a8165;
 }
-.faq .btn-link.collapsed strong {
+.btn-link.collapsed strong {
     color: #1a8165;
 }
-.faq .btn-link.collapsed {
+.btn-link.collapsed {
     background-color: #fff;
     background-image: url(assets/images/arrow-down.svg);
 }
